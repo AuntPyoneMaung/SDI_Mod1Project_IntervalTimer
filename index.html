@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Timer</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script defer src="./src/index.js"></script>
+</head>
+
+<body>
+    <div class='header'>
+        <h1>INTERVAL TIMER</h1>
+    </div>
+    <hr>
+    <div class='titlebox'>
+        <textarea placeholder='Set your agenda here...' name="agenda" id="textinput" cols="50" rows="10" autofocus></textarea>
+    </div>
+    <hr>
+
+    
+    <div class="counter-container">
+        <div class='grid-control'>
+            <div class='item'>
+                <h2 class="workSeconds"></h2>
+                <h3>Work</h3>
+            </div>
+
+            <div class="item">
+                <h2 class="restSeconds"></h2>
+                <h3>Rest</h3>
+            </div>
+
+            <div class="item item1">
+                <h2 id="value" class="currentSet"></h2>
+                <h3>Remaining Sets</h3>
+    
+            </div>
+        </div>
+    </div>
+
+
+    <div class="control-container">
+
+        <div class="control">
+            <label for="sets">Sets: <span class="sets"></span></label>
+            <input type="number" name="sets" min="0" max="100" value="0">
+        </div>
+
+        <div class="control">
+            <label for="spacing">Rest Interval (seconds) : <span class="rest"></span></label>
+            <input type="number" name="rest" min="0" max="60" value="0">
+        </div>
+
+        <div class="control">
+            <label for="seconds">Work Interval (seconds) :<span class="work"></span></label>
+            <input type="number" name="seconds" min="0" max="60" value="0">
+        </div>
+
+    </div>
+
+    
+    <div class="button">
+        <button class="start">Start</button>
+    </div>
+
+</body>
+
+</html>

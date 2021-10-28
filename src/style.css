@@ -1,0 +1,50 @@
+.header {
+  background-color: rgb(212, 212, 212);
+  display: flex;
+  justify-content: center;
+}
+
+.titlebox {
+  display: flex;
+  justify-content: center;
+}
+
+#textinput {
+  height: 120px;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+}
+
+.counter-container {
+  justify-content: center;
+  /* border: red solid 5px; */
+}
+
+.grid-control {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  margin: 0px 110px;
+  /* border: blue solid 5px; */
+}
+
+.item {
+  text-align: center;
+  /* border: green solid 5px; */
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+}
+
+.count-down {
+  padding: 10px;
+  margin: 0px 50px;
+}
+
+@media (max-width: 800px) {
+  .grid-control {
+    display: block;
+  }
+}
